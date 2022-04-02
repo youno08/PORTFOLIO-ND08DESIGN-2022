@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;1,300&family=Poppins:wght@100;400&display=swap');
+
+body{
+  font-family : 'Poppins', sans-serif; 
+  color:white;
+  
+background-color: rgb(18, 10, 31);
+
+}
+
+
+header{
+
+  background-color: rgb(32, 19, 53);
+}
+/* =========   =======
+COULEURS
+=========           =========
+orange: 255, 153, 0
+rose: 216, 140, 154
+bleu medium: 79, 71, 137
+blue foncé:32, 19, 53
+bleu clair:102, 155, 188
+carmin: 150, 3, 26
+105, 153, 93 vert
+vert clair 144, 194, 144
+grisbleufoncé 68, 64, 84
+22, 27, 51 bleu foncé2
+======== ======= =======
+== == == == == == == */
+
+
+
+/* 
+----------------------------------------
+----------------------------------------
+nav + boutons
+----------------------------------------
+---------------------------------------- */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: rgb(18, 10, 31);
+  }
+nav .profile {
+
+  display: flex;
+  align-items: center;
+  }
+nav .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-position: left;
+  }
+nav .profile h1 {
+font-weight: 400;
+  font-size: 15px;
+  margin-left: 10px;
+  }
+nav ul  {
+  display: flex;
+  list-style-type: none;
+
+  }
+nav li {
+
+  margin-left: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid  rgb(18, 10, 31);
+  }
+nav ul li:hover {
+     color:rgb(255, 153, 0) ; 
+  border-bottom-color: rgb(255, 153, 0);
+  }
+  nav ul li:active{
+    color:rgb(150, 3, 26); 
+ border-bottom-color: rgb(150, 3, 26);
+ }
+.menu ul a:link { 
+color:#fff ;
+text-decoration: none;
+}
+.menu ul a:visited { 
+color:#fff ;
+text-decoration: none;
+}
+.menu ul a:hover {
+  color:rgb(255, 153, 0);
+  text-decoration: none;
+}
+
+.menu ul a:active {
+  color:rgb(150, 3, 26);
+  text-decoration: none;
+  border-bottom-color:rgb(150, 3, 26);
+}
+/* ----------------------------------------
+---------------------------------------- */
+
+
+/* ==========haut2page============= */
+.haut2page {
+  margin: 4%;
+  max-width: 80%;
+  
+}
+
+.haut2page h1 {
+
+  font-size: 4em;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'barlow' ; 
+  color: rgb(255, 153, 0);
+  text-shadow: 5px 5px rgb(150, 3, 25, 0.329);
+}
+  /* ==========================
+  ==========================
+  grille =========
+  ==========
+  ======= */
+
+.grilles h2 {
+justify-content: center;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.gallery{
+  margin:auto;
+  border: 3px solid rgb(65, 90, 119);
+align-items: center;
+max-width: 1200px;
+background-color:rgb(150, 3, 25);
+
+
+}
+.gallery .item{
+
+  padding: 0 10px;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill , 250px);
+  row-gap :10px;
+  column-gap:10px ;
+  justify-content:space-around;
+
+  background-color:rgba(18, 10, 31, 0.096);
+ 
+}
+.item {
+ justify-content: center;
+min-height: 50px;
+
+padding: 10px;
+color:rgb(255, 255, 255);
+border-radius: 5px;
+background-size:100%  ; 
+background-repeat: no-repeat ;
+background-position: center ;
+text-shadow: 1px 1px rgb(29, 14, 54);
+
+
+
+}
+.img1{ background-image:  url("../portfolio22/assets/img/um1final.png" );}
+.img2{ background-image: url("../portfolio22/assets/img/dsor.png");}
+.img3{ background-image: url("../portfolio22/assets/img/studiio.png");}
+.img4{ background-image: url("../portfolio22/assets/img/dia2.png" );}
+.img5{ background-image:  url("../portfolio22/assets/img/dscfinal1.png");}
+.img6{ background-image:  url("../portfolio22/assets/img/lyna\ gaming\ logo.png");}
+.img7{ background-image:  url("../portfolio22/assets/img/carré\ bg\ blanc.png" );}
+.img8{ background-image: url("../portfolio22/assets/img/vert.png");}
+.img9{ background-image: url("../portfolio22/assets/img/mlbio.png");}
+.img10{ background-image: url("../portfolio22/assets/img/music1losange.png" );}
+.img11{ background-image:  url("../portfolio22/assets/img/m1school.png");}
+.img12{ background-image:  url("../portfolio22/assets/img/norgec.png");}
+
+
+
+.item p {
+  /* background: text;
+   background-color: rgb(18, 10, 31); 
+   border: 1px solid rgb(255, 153, 0);*/
+ 
+margin-top: 90%;
+justify-content: center;
+ width:fit-content ;
+ height: fit-content;
+  
+  background-color: rgba(97, 16, 16, 0.452);
+}
+/*   
+  font-family: "Poppins, sans-serif"; 
+ 
+  transform: rotate(-90deg);*/
+
+  /* ===================
+  =================
+  grille2
+  ==============
+  =============================================
+   */
+  
+
+   
+  /* }
+  .p{
+
+    background: black;
+  } */
+/* ==========================
+bouton .btnRetour bas==========
+================== */
+.btnRetour {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background: rgb(32, 19, 53);
+    font-family:Barlow ;
+}
+
+.btnRetour a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: rgb(255, 153, 0);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btnRetour a:hover {
+    color: rgb(202, 122, 1);
+    background: rgb(255, 153, 0);
+    box-shadow: 0 0 10px rgb(255, 153, 0), 0 0 40px rgb(255, 153, 0), 0 0 80px rgb(255, 153, 0);
+    transition-delay: 1s;
+}
+.btnRetour a span {
+    position: absolute;
+    display: block;
+}
+.btnRetour a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(255, 153, 0));
+      
+}
+.btnRetour a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+.btnRetour a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgb(168, 102, 3));
+}
+.btnRetour a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.btnRetour a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(255, 153, 0));
+}
+.btnRetour a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.btnRetour a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(255, 153, 0)); 
+}
+.btnRetour a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+/* ====================
+==========rgb(150, 3, 25);========= */
+  
+ 
+ /* ==========================
+bouton .btnRetour intermediaires==========
+================== */
+.btnRetour2 {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  /* background: rgb(32, 19, 53); */
+  font-family:Barlow ;
+  
+  
+}
+
+.btnRetour2 a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: rgb(255, 153, 0);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 1em;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.btnRetour2 a:hover {
+  color: rgb(202, 122, 1);
+  background: rgb(255, 153, 0);
+  box-shadow: 0 0 10px rgb(255, 153, 0), 0 0 40px rgb(255, 153, 0), 0 0 80px rgb(255, 153, 0);
+  transition-delay: 1s;
+}
+.btnRetour2 a span {
+  position: absolute;
+  display: block;
+}
+.btnRetour2 a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgb(255, 153, 0));
+    
+}
+.btnRetour2 a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+.btnRetour2 a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, rgb(168, 102, 3));
+}
+.btnRetour2 a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.btnRetour2 a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgb(255, 153, 0));
+}
+.btnRetour2 a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.btnRetour2 a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, rgb(255, 153, 0)); 
+}
+.btnRetour2 a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+ /* ==========================
+bouton .btnRetour page==========
+================== */
+.btnRetour3 {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  /* background: rgb(32, 19, 53); */
+  
+  
+  
+}
+
+.btnRetour3 a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: rgb(255, 153, 0);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 1em;
+  overflow: hidden;
+  transition: 0.2s;
+  font-family:Barlow ;
+}
+.btnRetour3 a:hover {
+  color: rgb(99, 4, 18);
+  background: rgb(150, 3, 26);
+  box-shadow: 0 0 10px rgb(150, 3, 26), 0 0 40px rgb(150, 3, 26), 0 0 80px rgb(150, 3, 26);
+  transition-delay: 1s;
+  
+}
+.btnRetour3 a span {
+  position: absolute;
+  display: block;
+}
+.btnRetour3 a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgb(150, 3, 26));
+    
+}
+.btnRetour3 a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+.btnRetour3 a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, rgb(112, 3, 19));
+}
+.btnRetour3 a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.btnRetour3 a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgb(185, 3, 31));
+}
+.btnRetour3 a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.btnRetour3 a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, rgb(150, 3, 26)); 
+}
+.btnRetour3 a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+} 
+
+footer  {
+  background-color: #000;
+}
+footer p {
+
+  font-size: 12px;
+  text-align: center;
+  background-color: rgb(255, 153, 0);
+     }

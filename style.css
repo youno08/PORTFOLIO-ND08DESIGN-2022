@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;1,300&family=Poppins:wght@100;400&display=swap');
+
+
+body {
+  background-color: black; 
+  height: 100%;
+  /* overflow: hidden; */
+  font-family : 'Poppins', sans-serif; 
+  color:white
+}
+
+
+/* 
+----------------------------------------
+----------------------------------------
+nav + boutons
+----------------------------------------
+---------------------------------------- */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    }
+nav .profile {
+
+    display: flex;
+    align-items: center;
+    }
+nav .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-position: left;
+    }
+nav .profile h1 {
+  font-weight: 400;
+    font-size: 15px;
+    margin-left: 10px;
+    }
+nav ul  {
+    display: flex;
+    list-style-type: none;
+  
+    }
+nav li {
+
+    margin-left: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid  rgb(0, 0, 0);
+    }
+nav ul li:hover {
+       color:rgb(255, 153, 0) ; 
+    border-bottom-color: rgb(255, 153, 0);
+    }
+
+.menu ul a:link { 
+color:#fff ;
+text-decoration: none;
+}
+.menu ul a:visited { 
+  color:#fff ;
+  text-decoration: none;
+  }
+.menu ul a:hover {
+    color:rgb(255, 153, 0);
+    text-decoration: none;
+  }
+
+.menu ul a:active {
+    color:rgb(255, 251, 0);
+    text-decoration: none;
+  }
+  /* ----------------------------------------
+  ---------------------------------------- */
+
+.haut {
+    margin: 4%;
+    max-width: 80%;
+}
+
+.haut header{
+    margin-top: 5%;
+    }
+.haut h1 {
+
+padding-bottom: 10px;
+    font-size: 4em;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'barlow' ; 
+    color: rgb(255, 153, 0);
+    text-shadow: 5px 5px rgba(77, 77, 77, 0.445) ;
+}
+/* .haut h2 {
+font-size: 1em;
+ font-family: 'poppins'; 
+color: rgb(201,201,201);
+margin-bottom: 0px;
+padding-bottom: 0px;
+
+} */
+.haut p {
+    /* line-height: 30px; */
+    color: rgb(201, 201, 201);
+    margin-top: 0%;
+    margin-bottom: 0%;
+    }
+
+
+
+
+/* 
+----------------------------------------
+----------------------------------------
+bouton croix 
+----------------------------------------
+---------------------------------------- */
+
+.box-2 {
+   background-color: #000000;
+  
+color:rgb(255, 153, 0);
+}
+
+.box-2 a:link {
+
+  color:#fff ;
+  text-decoration: none;
+
+}
+
+.box-2 a:visited {
+
+  color:#fff ;
+  text-decoration: none;
+
+}
+.box-2  a:hover {
+  color:rgb(255, 153, 0);
+  text-decoration: none;
+  font-size: 1.2em;
+  text-shadow:25px 25px rgba(255, 255, 255, 0.103),-25px -25px rgba(255, 255, 255, 0.425);
+  
+}
+.box-2 a:active {
+  color:rgb(255, 251, 0);
+  text-decoration: none;
+  font-size:  1.4em;
+}
+/* ----------------------------------------------
+---------------------------------------------- */
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  color:rgb(255, 255, 255);
+}
+
+
+
+/*
+========================
+      BUTTON TWO croix animation
+========================
+*/
+.btn-two {
+  color:rgb(255, 255, 255);
+  transition: all 0.5s;
+  position: relative; 
+ margin-top: 100px;
+ margin-bottom: 100px;
+}
+.btn-two span {
+  z-index: 2; 
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  color:rgb(255, 255, 255);
+}
+.btn-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgb(255, 153, 0);
+  background-color: rgba(17, 17, 17, 0.041);
+  color:rgb(255, 255, 255);
+}
+.btn-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgb(255, 153, 0);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+  
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+}
+/* ========================
+========================
+======================== */
+
+
+/* ========================
+en-t^te galerie box txt
+======================== */
+
+
+.travaux {
+
+
+  padding-top: 1em ;
+ 
+
+}
+.travaux p {
+    padding-left: 5%;
+  padding-right: 75%;
+
+background-color: #000000;
+}
+
+/* ========================
+GALERIE D'ACCUEIL = accordéon
+======================== */
+.galerie2{
+    margin-bottom: 80px;
+  margin-top: 50px;
+  background-color:rgb(255, 153, 0);
+    min-height: fit-content +10px; 
+  align-items: center;
+  width:auto;
+  max-width: 1200px;
+  /* height: auto; */
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px rgba(77, 77, 77, 0.445) ;
+  background-size:auto;
+
+  }
+.img-accordion{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.img{
+  flex: 1;
+  height:auto;
+  border:1px solid #222;
+  transform: skew(5deg);
+  margin: 0 2px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: all 0.3s;
+  max-height:  600px;
+  
+}
+.img1{ background-image:  url("../portfolio22/assets/img/logods.png" );}
+.img2{ background-image: url("../portfolio22/assets/img/nuit\ des\ arts\ de\ roubaix.png");}
+.img3{ background-image: url("../portfolio22/assets/img/jap2.png");}
+.img4{ background-image: url("../portfolio22/assets/img/dscgel.png" );}
+.img5{ background-image:  url("../portfolio22/assets/img/loreal.png");}
+.img6{ background-image:  url("../portfolio22/assets/img/dessin.jpg");}
+
+.img p{
+  position: absolute;
+  bottom: 0; left: 0;
+  background-color: rgba(0,0,0,0.6);
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Poppins, sans-serif";
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  transition: all 0.3s;
+  
+}
+.img-accordion:hover .img{
+  transform: skew(0);
+}
+.img:hover{
+  flex: 5;
+}
+.img:hover p{
+  transform: rotate(0);
+  background-color: rgb(0, 0, 0);
+  border:2px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "Poppins, sans-serif"; }
+/* ========================
+========================
+======================== */
+
+footer  {
+  background-color: #000;
+}
+
+
+/* 
+----------------------------------------
+----------------------------------------
+nav footer + boutons liens footer
+----------------------------------------
+---------------------------------------- */
+.onglets2 {
+text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+align-content: space-between;
+max-width: 1000px;
+align-self: center;
+align-items: center;
+text-shadow: 2px 2px rgba(77, 77, 77, 0.445) ;
+text-align: center;
+}
+footer p {
+
+font-size: 12px;
+text-align: center;
+background-color: rgb(255, 153, 0);
+   }
+.onglets2 ul {
+    color: #fff;
+      display: flex;
+      list-style-type: none;
+       }
+.onglets2 li {
+      
+      margin-left: 15px;
+      cursor: pointer;
+      border-bottom: 2px solid  rgb(255, 153, 0);
+      }
+.onglets2 ul li:hover {
+  color:rgb(255, 153, 0);
+      border-bottom-color: rgb(0, 0, 0);
+      }
+.onglets2 a:link {
+      color:#fff ;
+      text-decoration: none;
+    }
+.onglets2 a:visited {
+      color:#fff ;
+      text-decoration: none;
+    }
+.onglets2 a:hover {
+      color:rgb(255, 153, 0);
+      text-decoration: none;
+    }
+.onglets2 a:active {
+      color:rgb(255, 251, 0);
+      text-decoration: none;
+    }
+    /* ----------------------------------------
+---------------------------------------- */
